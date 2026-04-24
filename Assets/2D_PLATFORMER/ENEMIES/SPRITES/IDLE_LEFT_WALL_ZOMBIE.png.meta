@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 00e16c965bfcc4fb99617253bb7f95c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3233064272705884419
+    second: IDLE_LEFT_WALL_ZOMBIE_0
+  - first:
+      213: -7078377639656693928
+    second: IDLE_LEFT_WALL_ZOMBIE_1
+  - first:
+      213: -7356477278866809864
+    second: IDLE_LEFT_WALL_ZOMBIE_2
+  - first:
+      213: 3779288482940505870
+    second: IDLE_LEFT_WALL_ZOMBIE_3
+  - first:
+      213: 6261793646508722569
+    second: IDLE_LEFT_WALL_ZOMBIE_4
+  - first:
+      213: -2117141648761174893
+    second: IDLE_LEFT_WALL_ZOMBIE_5
+  - first:
+      213: 8630017753218668934
+    second: IDLE_LEFT_WALL_ZOMBIE_6
+  - first:
+      213: -8770419450938374546
+    second: IDLE_LEFT_WALL_ZOMBIE_7
+  - first:
+      213: -5401481580707323482
+    second: IDLE_LEFT_WALL_ZOMBIE_8
+  - first:
+      213: 2482854429013568028
+    second: IDLE_LEFT_WALL_ZOMBIE_9
+  - first:
+      213: 3430254769118993064
+    second: IDLE_LEFT_WALL_ZOMBIE_10
+  - first:
+      213: -8186852252520751285
+    second: IDLE_LEFT_WALL_ZOMBIE_11
+  - first:
+      213: 1850616395178265653
+    second: IDLE_LEFT_WALL_ZOMBIE_12
+  - first:
+      213: -5685034625908575936
+    second: IDLE_LEFT_WALL_ZOMBIE_13
+  - first:
+      213: -3393871436298815398
+    second: IDLE_LEFT_WALL_ZOMBIE_14
+  - first:
+      213: -7587783143853641472
+    second: IDLE_LEFT_WALL_ZOMBIE_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1543
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30114a693d62edc20800000000000000
+      internalID: 3233064272705884419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1543
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85fd1322a0d84cd90800000000000000
+      internalID: -7078377639656693928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_2
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1543
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb59e224ea88e990800000000000000
+      internalID: -7356477278866809864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_3
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1543
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fc4690adab27430800000000000000
+      internalID: 3779288482940505870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1031
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98943f4252c56e650800000000000000
+      internalID: 6261793646508722569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_5
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1031
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394c76633e66e92e0800000000000000
+      internalID: -2117141648761174893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_6
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1031
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689d9e93c6bf3c770800000000000000
+      internalID: 8630017753218668934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_7
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1031
+        width: 496
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6644af1af5394680800000000000000
+      internalID: -8770419450938374546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_8
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 546
+        width: 223
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1ef11ee151a05b0800000000000000
+      internalID: -5401481580707323482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 549
+        width: 246
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aeb5ec2fed47220800000000000000
+      internalID: 2482854429013568028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_10
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 550
+        width: 166
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa5d6ac986ba9f20800000000000000
+      internalID: 3430254769118993064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_11
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 547
+        width: 229
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fd4eb8045726e80800000000000000
+      internalID: -8186852252520751285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_12
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 35
+        width: 223
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c4d127ec5bea910800000000000000
+      internalID: 1850616395178265653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_13
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 35
+        width: 231
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0417cead023ba11b0800000000000000
+      internalID: -5685034625908575936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_14
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 35
+        width: 187
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58701209eb86e0d0800000000000000
+      internalID: -3393871436298815398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_LEFT_WALL_ZOMBIE_15
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 35
+        width: 197
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00138e5be67c2b690800000000000000
+      internalID: -7587783143853641472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IDLE_LEFT_WALL_ZOMBIE_0: 3233064272705884419
+      IDLE_LEFT_WALL_ZOMBIE_1: -7078377639656693928
+      IDLE_LEFT_WALL_ZOMBIE_10: 3430254769118993064
+      IDLE_LEFT_WALL_ZOMBIE_11: -8186852252520751285
+      IDLE_LEFT_WALL_ZOMBIE_12: 1850616395178265653
+      IDLE_LEFT_WALL_ZOMBIE_13: -5685034625908575936
+      IDLE_LEFT_WALL_ZOMBIE_14: -3393871436298815398
+      IDLE_LEFT_WALL_ZOMBIE_15: -7587783143853641472
+      IDLE_LEFT_WALL_ZOMBIE_2: -7356477278866809864
+      IDLE_LEFT_WALL_ZOMBIE_3: 3779288482940505870
+      IDLE_LEFT_WALL_ZOMBIE_4: 6261793646508722569
+      IDLE_LEFT_WALL_ZOMBIE_5: -2117141648761174893
+      IDLE_LEFT_WALL_ZOMBIE_6: 8630017753218668934
+      IDLE_LEFT_WALL_ZOMBIE_7: -8770419450938374546
+      IDLE_LEFT_WALL_ZOMBIE_8: -5401481580707323482
+      IDLE_LEFT_WALL_ZOMBIE_9: 2482854429013568028
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
