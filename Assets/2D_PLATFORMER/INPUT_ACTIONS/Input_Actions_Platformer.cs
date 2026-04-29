@@ -109,6 +109,15 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Fire"",
+                    ""type"": ""Button"",
+                    ""id"": ""77944a9c-ccae-4090-9e58-b61bb6a26816"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -252,6 +261,28 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2b5ebe21-7581-40f1-b786-4d165186585b"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7c731265-653f-4bf6-b828-42021c915726"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fire"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -780,6 +811,7 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
         m_Player_1 = asset.FindActionMap("Player_1", throwIfNotFound: true);
         m_Player_1_Move = m_Player_1.FindAction("Move", throwIfNotFound: true);
         m_Player_1_Jump = m_Player_1.FindAction("Jump", throwIfNotFound: true);
+        m_Player_1_Fire = m_Player_1.FindAction("Fire", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -875,6 +907,7 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
     private List<IPlayer_1Actions> m_Player_1ActionsCallbackInterfaces = new List<IPlayer_1Actions>();
     private readonly InputAction m_Player_1_Move;
     private readonly InputAction m_Player_1_Jump;
+    private readonly InputAction m_Player_1_Fire;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player_1".
     /// </summary>
@@ -894,6 +927,10 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
         /// Provides access to the underlying input action "Player_1/Jump".
         /// </summary>
         public InputAction @Jump => m_Wrapper.m_Player_1_Jump;
+        /// <summary>
+        /// Provides access to the underlying input action "Player_1/Fire".
+        /// </summary>
+        public InputAction @Fire => m_Wrapper.m_Player_1_Fire;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -926,6 +963,9 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Fire.started += instance.OnFire;
+            @Fire.performed += instance.OnFire;
+            @Fire.canceled += instance.OnFire;
         }
 
         /// <summary>
@@ -943,6 +983,9 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Fire.started -= instance.OnFire;
+            @Fire.performed -= instance.OnFire;
+            @Fire.canceled -= instance.OnFire;
         }
 
         /// <summary>
@@ -1192,6 +1235,13 @@ public partial class @Input_Actions_Platformer: IInputActionCollection2, IDispos
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnJump(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Fire" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnFire(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
