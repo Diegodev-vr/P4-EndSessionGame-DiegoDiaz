@@ -17,18 +17,16 @@ public class Player_1_Movement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform firePoint;
-
 
     ///// call the new input system I created in the input actions asset
     private Input_Actions_Platformer Input_Actions_Platformer;
 
     ///// declare variables for input actions and input values
     private InputAction move;
-    private InputAction fire;
     private Vector2 moveInput;
 
+    ///// variable to track if the player is currently knocked back
+    private bool isKnockedBack = false;
 
     //////////// LOGIC ///////////
 
@@ -42,27 +40,16 @@ public class Player_1_Movement : MonoBehaviour
     {
         ///// get Inputs into the variables
         move = Input_Actions_Platformer.Player_1.Move;
-        fire = Input_Actions_Platformer.Player_1.Fire;
+
 
         ///// enable the input actions
         move.Enable();
-        fire.Enable();
-
-        ////// subscribe to the fire input action performed event to call the Shoot method when the fire button is pressed
-        fire.performed += Shoot;
-
     }
 
     private void OnDisable()
     {
         ///// disable the input actions
         move.Disable();
-        fire.Disable();
-
-        ////// unsubscribe from the fire input action performed event to prevent memory leaks
-        fire.performed -= Shoot;
-
-
     }
 
     private void Update()
@@ -78,6 +65,9 @@ public class Player_1_Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        ///// if the player is currently knocked back, skip movement logic to prevent interference with knockback effect
+        if (isKnockedBack) return;
+
         ///// if player is pressing move = accelerate, else = decelerate
         if (moveInput.x != 0)
         {
@@ -97,17 +87,21 @@ public class Player_1_Movement : MonoBehaviour
         rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, -moveMaxSpeed, moveMaxSpeed), rb.linearVelocity.y);
     }
 
-    ////// method to shoot a bullet when the fire input action is performed
-    private void Shoot(InputAction.CallbackContext context)
+    ///// method to apply knockback force to the player when hit by a damage zone
+    public void ApplyKnockback(Vector2 force)
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        isKnockedBack = true;
 
-        if (bullet.TryGetComponent(out Bullet bulletScript))
-        {
-            Vector2 direction = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(force, ForceMode2D.Impulse);
 
-            bulletScript.Initialize(direction);
-        }
+        Invoke(nameof(ResetKnockback), 0.2f);
+    }
+
+    ///// method to reset the knockback state after a short duration, allowing the player to regain control
+    private void ResetKnockback()
+    {
+        isKnockedBack = false;
     }
 
 }

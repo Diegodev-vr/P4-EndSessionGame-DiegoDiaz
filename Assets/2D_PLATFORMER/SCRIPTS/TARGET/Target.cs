@@ -3,6 +3,7 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     [SerializeField] private int health = 3;
+    [SerializeField] private GameObject target;
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
@@ -18,7 +19,7 @@ public class Target : MonoBehaviour
     public void TakeDamage(int amount)
     {
         if (health <= 0) return;
-
+        GameManager.Instance.PlayZombie();
         health -= amount;
 
         if (health <= 0)
@@ -29,10 +30,11 @@ public class Target : MonoBehaviour
 
     private void Die()
     {
-        spriteRenderer.color = Color.gray;
+        GameManager.Instance.PlayExplosion();
+        //spriteRenderer.color = Color.gray;
 
         TargetManager.Instance.NotifyTargetDestroyed();
 
-        gameObject.SetActive(false);
+        target.SetActive(false);
     }
 }

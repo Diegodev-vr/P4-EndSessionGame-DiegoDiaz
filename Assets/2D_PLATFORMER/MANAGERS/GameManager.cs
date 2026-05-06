@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
     ///// singleton pattern for easy access from other scripts, like the UI scripts
     ///// could be access from other scripts like this: GameManager.Instance.TakeDamage(10f);
     ///// subscribe and unsubcribe tho the events like this:
@@ -33,6 +34,18 @@ public class GameManager : MonoBehaviour
     ///// event to notify the UI when the timer changes
     public event Action<float> OnTimerChanged;
 
+    ///// events for sound effects, these will be called by the enemy scripts when they hit the player, shoot, etc.
+    public event Action OnPlayerHurt;
+    public event Action OnGunShot;
+    public event Action OnZombie;
+    public event Action OnExplosion;
+    public event Action OnGameStart;
+
+    ///// these functions will be called by the enemy scripts to trigger the sound effects, they simply invoke the corresponding events
+    public void PlayGunShot() => OnGunShot?.Invoke();
+    public void PlayZombie() => OnZombie?.Invoke();
+    public void PlayExplosion() => OnExplosion?.Invoke();
+    public void StartGame() => OnGameStart?.Invoke();
     private void Awake()
     {
         ///// implement the singleton pattern, make sure there is only one instance of the GameManager in the scene
@@ -63,10 +76,14 @@ public class GameManager : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (amount == 0) return;
+        ///// clamp the current health between 0 and max health, then invoke the OnHealthChanged event to update the UI
         m_CurrentHealth = Mathf.Clamp(m_CurrentHealth - amount, 0f, maxHealth);
         OnHealthChanged?.Invoke(m_CurrentHealth / maxHealth);
 
-        ///// if the player's health drops to 0 or below, restart the level
+        ///// trigger the OnPlayerHurt event to play the hurt sound effect
+        OnPlayerHurt?.Invoke();
+
+        ///// check if the player's health has dropped to 0 or below, if so, restart the level
         if (m_CurrentHealth <= 0f)
         {
             RestartLevel();
